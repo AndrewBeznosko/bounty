@@ -1,0 +1,132 @@
+
+@media screen and (max-width: 1500px) {
+
+    .sec-left {
+        flex-basis: 15%;
+    }
+
+    .sec-right {
+        flex-basis: 25%;
+    }
+
+    .sec-center {
+        flex-direction: column;
+        overflow: auto;
+        display: block;
+    }
+
+    .sec-center-3,
+    .sec-center-4 {
+        min-height: 400px;
+    }
+
+    .sec-center-2 {
+        min-height: 600px;
+    }
+    
+    .btns-wrapper {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width:768px) {
+    .sec-left {
+        @include flex-basis(35%);
+    }
+
+    .sec-right {
+        @include flex-basis(35%);
+    }
+
+    .sec-center .bottom {
+        flex-direction: column;
+    }
+    
+    .sec-center-3 .table tr td:first-of-type, .sec-center-3 .table tr th:first-of-type {
+    width: 25%;
+}
+    
+    .sec-center-4 .table td {
+    text-align: center;
+    }
+        
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        overflow: auto;
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .main-wrapper {
+        height: 100%;
+    }
+
+    .main-content {
+        max-height: 100%;
+        @include flex-direction(column);
+    }
+
+    .sec-right {
+        @include order(1);
+    }
+
+    .sec-left {
+        @include order(2);
+    }
+
+    .sec-center {
+        @include order(3);
+        padding: 0;
+
+        .sec {
+            margin: 0;
+            margin-top: 15px;
+        }
+
+        .left .bottom {
+            @include flex-direction(column);
+
+            .sec {
+                max-height: 500px;
+            }
+        }
+    }
+
+    .sec-left .list {
+        max-height: 400px;
+    }
+
+    .sec-left .search label {
+        margin-bottom: 0;
+    }
+    
+    /* HEADER*/
+    
+    .navbar-left {
+        margin-bottom: 1rem;
+        margin-top: 1rem;    
+    }
+
+    .navbar-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    header .navbar .dropdown-menu {
+        position: absolute;
+        transform: translateX(0);
+        left: 0;
+    }
+    
+    /* END HEADER */
+}
+
+ .main-wrapper .main-content .container-fluid {
+        overflow-y: auto;
+    }
