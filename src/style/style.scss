@@ -73,6 +73,16 @@
 |                                   Common                                     |
 ================================================================================
 */
+.main-wrapper {
+    visibility: hidden;
+    opacity: 0;
+    
+    &.show {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .container {
         max-width: 1215px;
@@ -89,6 +99,37 @@
     line-height: 1;
 }
 
+.card {
+    border: none;
+    box-shadow: 0 2px 40px 0 rgba(175, 178, 179, 0.19);
+    @include border-radius(14px);
+}
+
+.form-control {
+    padding: .34rem .75rem;
+    font-size: 12px;
+    @include border-radius(15px);
+    border-color: #b4b4b4;
+}
+
+.input-group-text {
+    padding: .34rem .75rem;
+    font-size: 13px;
+    @include border-radius(15px);
+    border-color: #b4b4b4;
+    background-color: transparent;
+}
+
+.input-group-prepend {
+    .input-group-text  {
+        border-right: none;
+    }
+    
+    & + .form-control {
+        border-left: none;
+    }
+}
+
 /*
 ================================================================================
 |                                   Header                                     |
@@ -96,6 +137,15 @@
 */
 
 @import 'header';
+
+
+/*
+================================================================================
+|                                   filters                                    |
+================================================================================
+*/
+
+@import 'filters';
 
 /*
 ================================================================================
@@ -105,13 +155,14 @@
 
 @import 'responsive'; 
 
+
+
+
+
+
 .main-wrapper {
     background-color: #f5f5f5;
     min-height: 100vh;
-}
-
-.card {
-    border-radius: 20px;
 }
 
 .header-select .item {
