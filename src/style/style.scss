@@ -37,6 +37,65 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Source Sans Pro Regular';
+    src: url('../fonts/SourceSansPro-Regular.eot');
+    src: url('../fonts/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SourceSansPro-Regular.woff') format('woff'),
+    url('../fonts/SourceSansPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Regular.woff') format('woff'),
+    url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('../fonts/Roboto-Medium.eot');
+    src: url('../fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Medium.woff') format('woff'),
+    url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*
+================================================================================
+|                                   Common                                     |
+================================================================================
+*/
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1215px;
+    }   
+}
+
+.btn {
+    font-family: 'Roboto Regular';
+}
+
+.btn-group-sm>.btn, .btn-sm {
+    font-size: 0.6875rem;
+    padding: .4rem 1.4375rem;
+    line-height: 1;
+}
+
+/*
+================================================================================
+|                                   Header                                     |
+================================================================================
+*/
+
+@import 'header';
 
 /*
 ================================================================================
