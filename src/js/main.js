@@ -38,4 +38,12 @@ $(document).ready(function () {
         $(this).parents(".b-custom-select").removeClass("opened");
         $(this).parents(".b-custom-select").find(".b-custom-select-trigger").text($(this).text());
     });
+    
+     $(".js-header-select").each(function () {
+        $(this).find(".item").each(function () {
+            $(this).click(function () {
+                $(this).addClass("selected").siblings().removeClass("selected");
+            });
+        });
+    });
 });

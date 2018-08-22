@@ -209,9 +209,11 @@
 
 .btn-outline-secondary {
     background-color: #fff;
-    color: #cbcbcb;
-    border:none;
-    box-shadow: 0 2px 8px -2px #cbcbcb;
+    color: #000;
+    border:1px solid #cbcbcb;
+    padding: 2px 15px;
+    width: 100px;
+    overflow-x: hidden;
     &:hover {
         background-color: #fff;
         color: #cbcbcb;
@@ -252,12 +254,62 @@
 
 .bottom-line {
     width: 100%;
-    height: 4px;
+    height: 5px;
     background-color: #f5f5f5;
     border-radius: 10px;
     .line{
         height: 100%;
         width: 25%;
         background-color: #652d90;
+        border-radius: 10px;
     }
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #f7f7f7;;
+    margin: 10px 0;
+}
+
+.line-bottom {
+    margin-top:0;
+}
+
+.tab-content {
+    .card-content-wrapp {
+        height: 350px;
+        overflow-y: auto;
+            .card-content {
+                position: relative;
+                padding-left: 25px;
+                padding-right: 20px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 10px;
+                    display: block;
+                    width: 3px;
+                    height: 100%;
+                    border-radius: 3px;
+                }
+            }
+        .yellow:before {
+        background-color: #f3f5a1;
+        }
+    
+        .green:before {
+            background-color: #98debc;
+        }
+        
+        .card-content-title {
+            font-weight: 500;
+        }
+        
+    }
+    
+    
 }
