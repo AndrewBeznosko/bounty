@@ -192,6 +192,15 @@
     }
 }
 
+.btn-success {
+    background-color: #85c997;
+    border-color: #85c997;
+        &:hover {
+            background-color: #85c997;
+            border-color: #85c997;
+        }
+}
+
 .btn-outline-light {
     color:#652d90;
     border-color: #652d90;
@@ -208,7 +217,7 @@
 }
 
 .text-gray {
-    color: #cbcbcb;
+    color: #a5a5a5;
 }
 
 .text-bold-black {
@@ -225,6 +234,13 @@
         }
 }
 
+.btn-sm-custom {
+    padding: 0 15px;
+    height: 20px;
+    line-height: 1.5;
+    font-size: 13px;
+}
+
 .title {
     font-family: "Oxygen";
      color:#652d90;
@@ -235,7 +251,14 @@
     padding-right: 30px; 
 }
 
+.btn-outline-secondary {
+    box-shadow: 0 2px 5px 0px #cbcbcb;
+    border: none;
+}
+
 .btn-outline-secondary.custom-secondary {
+    font-size: 14px;
+    line-height: 1.7;
     background-color: #fff;
     color: #000;
     border:1px solid #cbcbcb;
@@ -291,6 +314,7 @@
                 padding-right: 20px;
                 margin-top: 15px;
                 margin-bottom: 15px;
+                 color: #a5a5a5;
 
                 &:before {
                     content: '';
