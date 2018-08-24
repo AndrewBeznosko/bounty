@@ -1,12 +1,35 @@
 .main-card {
+    .card-body {
+        padding: 0.9rem 0 1rem;
+    }
+    
+    .title-wrapper {
+        @include align-items(center);
+        margin-bottom: 1.05rem;
+    }
+    
     .title {
         font-size: 1.6rem;
         letter-spacing: .4px;
         color: #555555;
+        margin: 0;
+    }
+    
+    .logo {
+        position: absolute;
+        top: -8px;
+        left: 25px;
+        display: inline-block;
+        width: 75px;
+        height: 75px;
     }
     
     section {
         padding-left: 120px;
-        padding-right: 30px; 
+        padding-right: 30px;
+        
+        .top {
+            position: relative;
+        }
     }
 }

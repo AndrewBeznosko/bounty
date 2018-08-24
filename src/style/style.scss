@@ -321,6 +321,8 @@
 
 .btn {
     border-radius: 25px;
+    
+    &:active, 
     &:focus {
         @include box-shadow(none);
     }
@@ -329,8 +331,11 @@
 .btn-success {
     background-color: #85c997;
     border-color: #85c997;
+    padding: .4rem 1rem .4rem 1.3rem;
+    box-shadow: 0 3px 12px 0 rgba(175,178,179,.35); 
+    
         &:hover {
-            background-color: #85c997;
+            background-color: #77b287;
             border-color: #85c997;
         }
 }
