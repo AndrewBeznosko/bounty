@@ -103,21 +103,68 @@
     border: none;
      @include box-shadow(0 2px 40px 0 rgba(175, 178, 179, 0.19));
     @include border-radius(14px);
+    
+    &-body {
+        padding: 1.05rem 1.4rem;
+    }
 }
 
 .form-control {
-    padding: .34rem .75rem;
     font-size: 12px;
     @include border-radius(15px);
-    border-color: #b4b4b4;
+    border-color: #e1e1e1;
+    padding: .31rem .75rem .37rem;
+    padding-left: .3rem;
+    
+    &::placeholder {
+        color: #b4b4b4;
+        opacity: 1;
+        transition: .2s;
+    }
+    
+    &:-ms-input-placeholder {
+        color: #b4b4b4;
+        transition: .2s;
+    }
+    
+    &::-ms-input-placeholder {
+        color: #b4b4b4;
+        transition: .2s;
+    }
+    
+    &:focus {
+        box-shadow: none;
+        border-color: #e1e1e1;
+        
+        &::placeholder {
+            color: #b4b4b4;
+            opacity: 1;
+            transform: translateX(-100%);
+        }
+        
+        &:-ms-input-placeholder {
+            color: #b4b4b4;
+            transform: translateX(-100%);
+        }
+        
+        &::-ms-input-placeholder {
+            color: #b4b4b4;
+            transform: translateX(-100%);
+        }
+    }
 }
 
 .input-group-text {
     padding: .34rem .75rem;
+    padding-right: .3rem;
     font-size: 13px;
     @include border-radius(15px);
-    border-color: #b4b4b4;
+    border-color: #e1e1e1;
     background-color: transparent;
+    
+    .fas {
+        color: #b4b4b4;
+    }
 }
 
 .input-group-prepend {
@@ -166,7 +213,7 @@
 
 .header-select .item {
     display: inline-block;
-    padding: 15px;
+    padding: 19.5px 15px;
     padding-left: 0;
     padding-right: 0;
     margin-right: 18px;
