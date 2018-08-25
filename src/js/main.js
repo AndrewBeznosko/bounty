@@ -3,6 +3,8 @@ $(window).on("load", function () {
 });
 
 $(document).ready(function () {
+    
+    /* Custom select */
     $(".b-custom-select").each(function () {
         var classes = $(this).attr("class"),
             id = $(this).attr("id"),

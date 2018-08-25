@@ -31,6 +31,21 @@
         .top {
             position: relative;
         }
+        
+        &.top {
+            .nav {
+                justify-content: space-between;
+                
+                .btn {
+                    min-width: 14%;
+                    max-width: 14%;
+                    
+                    &.active {
+                        color: #fff;
+                    }
+                }
+            }
+        }
     }
     
     .card-text {
