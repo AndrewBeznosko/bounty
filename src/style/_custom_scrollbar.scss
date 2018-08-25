@@ -58,7 +58,7 @@ y-axis
 */
 
 .mCSB_inside > .mCSB_container {
-    margin-right: 10px;
+    margin-right: 30px;
 }
 
 .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
@@ -82,7 +82,7 @@ y-axis
 .mCSB_scrollTools {
     /* contains scrollbar markup (draggable element, dragger rail, buttons etc.) */
     position: absolute;
-    width: 16px;
+    width: 20px;
     height: auto;
     left: auto;
     top: 0;
@@ -431,7 +431,7 @@ yx-axis
 
 .mCS-light-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
 .mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-    width: 3px;
+    width: 5px;
 }
 
 .mCS-light-3.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
@@ -478,23 +478,20 @@ yx-axis
 /* theme "dark-3" */
 
 .mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-    background-color: #2C496C;
+    background-color: #ebebeb;
 }
 
 .mCS-dark-3.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
-    background-color: #2C496C;
-    background-color: rgba(44, 73, 108, 0.8);
+    background-color: #dfdfdf;
 }
 
 .mCS-dark-3.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
 .mCS-dark-3.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
-    background-color: #2C496C;
-    background-color: rgba(44, 73, 108, 0.8);
+    background-color: #dfdfdf;
 }
 
 .mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
-    background-color: #2C496C;
-    background-color: rgba(44, 73, 108, 0.1);
+    background-color: transparent;
 }
 
 .mCS-dark-3.mCSB_scrollTools .mCSB_buttonUp {

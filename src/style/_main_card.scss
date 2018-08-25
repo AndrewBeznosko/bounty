@@ -35,14 +35,62 @@
         &.top {
             .nav {
                 justify-content: space-between;
+            }
+        }
+        
+        .btn.btn-outline-secondary {
+            min-width: 15%;
+            max-width: 15%;
+            font-size: 12px;
+            font-family: Oxygen;
+            letter-spacing: .05rem;
+            padding: 5px 15px;
+            color: #555;
+            text-overflow: ellipsis;
+            border-color: #e1e1e1;
+            transition: .2s;
+            
+            &:hover {
+                box-shadow: 0 3px 12px 0 rgba(175,178,179,.35);
+            }
+            
+            &:active,
+            &:focus {
+                color: #fff;
+                background-color: #652d90;
                 
-                .btn {
-                    min-width: 14%;
-                    max-width: 14%;
-                    
-                    &.active {
-                        color: #fff;
-                    }
+                i {
+                    color: #fff;
+                }
+            }
+            
+            i {
+                font-size: 14px;
+                color: #555;
+            }
+            
+            &.active {
+                color: #fff;
+                text-overflow: initial;
+                max-width: 100%;
+                overflow: initial;
+                position: relative;
+                
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    top: 122%;
+                    transform: translateX(-50%) rotate(45deg);
+                    width: 10px;
+                    height: 10px;
+                    background: #fff;
+                    border-top: solid 1.5px #ebebeb;
+                    border-left: solid 1.5px #ebebeb;
+                }
+                
+                i {
+                    color: #fff;
                 }
             }
         }
@@ -62,5 +110,10 @@
             @include align-items(center);
             margin-bottom: .5rem;
         }
+    }
+    
+    section.middle {
+        padding-right: 0;
+        font-size: 0.875rem;
     }
 }
