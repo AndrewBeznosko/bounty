@@ -50,4 +50,9 @@ $(document).ready(function () {
     $('#nav-toggler').click(function () {
         $(this).toggleClass('open');
     });
+    
+    $(".card-content-wrapp").mCustomScrollbar({
+            theme: "dark-3",
+            scrollInertia: 200
+        });
 });
