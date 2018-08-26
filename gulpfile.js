@@ -12,7 +12,9 @@ var gulp = require('gulp'),
     pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf'),
     browserSync = require("browser-sync"),
+    htmlmin = require('gulp-htmlmin'),
     reload = browserSync.reload;
+   
 
 var path = {
     build: {
@@ -24,7 +26,7 @@ var path = {
         bootstrap: 'build/bootstrap/'
     },
     src: {
-        html: 'src/*.html',
+        html: 'src/index.html',
         js: 'src/js/**/*.js',
         style: 'src/style/style.scss',
         img: 'src/img/**/*.*',
@@ -55,7 +57,6 @@ gulp.task('webserver', function () {
     browserSync(config);
 });
 
-
 gulp.task('clean', function (cb) {
     rimraf(path.clean, cb);
 });
@@ -63,6 +64,7 @@ gulp.task('clean', function (cb) {
 gulp.task('html:build', function () {
     gulp.src(path.src.html) //Выберем файлы по нужному пути
         .pipe(rigger()) //Прогоним через rigger
+        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest(path.build.html))//Выплюнем их в папку build
         .pipe(reload({stream: true}));             
       //  .pipe(reload({stream: true}));//И перезагрузим наш сервер для обновлений
