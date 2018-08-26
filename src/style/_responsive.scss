@@ -1,5 +1,30 @@
 /* header */
 @media screen and (max-width:768px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .navbar-brand {
+        padding-top: .5125rem;
+        padding-bottom: .5125rem;
+    }
+    
+    .title,
+    .filters-title {
+        padding-left: 1rem;
+    }
+    
+    /* card-navbar */
+    .card-navbar {
+        .header-select {
+            display: none;
+        }
+        
+        .card-body {
+            padding: 0 1.5rem 0 1.5rem;
+        }
+    }
+    
     .navbar-nav li {
         width: 100%;
         text-align: center;
@@ -10,6 +35,87 @@
                 margin-top: 0.5rem;
             }
          
+        }
+    }
+    
+    /* row-main-card-and-filters */
+    .row-main-card-and-filters {
+        flex-direction: column-reverse;
+    }
+    
+    /* main-card */
+    .main-card {
+        
+        .logo {
+            top: 9px;
+            left: 22px;
+            width: 55px;
+            height: 55px;
+        }
+        
+        .title {
+            margin-left: 5rem;
+        }
+        
+        .bottom-line {
+            margin-left: 6rem;
+            width: auto;
+        }
+        
+        .card-text {
+            margin-top: 1rem;
+            
+            & > .top {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                margin-left: 1rem;
+            }
+            
+            & > .bottom {
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 1rem;
+                margin-left: 1rem;
+                
+                .btn-sm-custom {
+                    order: 1;
+                    margin-top: 1rem;
+                }
+            }
+            
+            .text-gray {
+                margin-bottom: .3rem;
+                max-width: 65%;
+                width: 100%;
+                margin-right: 0;
+            }
+            
+            .text-bold-black {
+                display: block;
+                margin-left: 0;
+                float: right;
+            }
+        }
+        
+        section {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            
+            .btn.btn-outline-secondary {
+                min-width: 100px;
+                max-width: 100px;
+                margin-bottom: 1rem;
+                
+                &.active::after {
+                    display: none;
+                }
+            }
+        }
+        
+        .line {
+            margin-top: 2px;
         }
     }
     
