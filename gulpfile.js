@@ -24,6 +24,7 @@ var path = {
         css: 'build/css/',
         img: 'build/img/',
         fonts: 'build/fonts/',
+        fontawesome: 'build/fontawesome/',
         bootstrap: 'build/bootstrap/',
         htaccess: 'build/'
     },
@@ -34,6 +35,7 @@ var path = {
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*',
         bootstrap: 'src/bootstrap/bootstrap.min.css',
+        fontawesome: 'src/fontawesome/**/*.*',
         htaccess: '.htaccess'
     },
     watch: {
@@ -42,6 +44,7 @@ var path = {
         style: 'src/style/**/*.scss',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*',
+        fontawesome: 'src/fontawesome/**/*.*',
         htaccess: '.htaccess'
     },
     clean: './build'
@@ -113,6 +116,11 @@ gulp.task('fonts:build', function() {
         .pipe(gulp.dest(path.build.fonts))
 });
 
+gulp.task('fontawesome:build', function() {
+    gulp.src(path.src.fontawesome)
+        .pipe(gulp.dest(path.build.fontawesome))
+});
+
 gulp.task('htaccess:build', function() {
     gulp.src(path.src.htaccess)
         .pipe(gulp.dest(path.build.htaccess))
@@ -130,6 +138,7 @@ gulp.task('build', [
     'fonts:build',
     'image:build',
     'bootstrap:build',
+    'fontawesome:build',
     'htaccess:build'
 ]);
 
@@ -150,6 +159,9 @@ gulp.task('watch', function(){
     });
     watch([path.watch.fonts], function(event, cb) {
         gulp.start('fonts:build');
+    });
+    watch([path.watch.fonts], function(event, cb) {
+        gulp.start('fontawesome:build');
     });
 });
 
