@@ -13,6 +13,7 @@ var gulp = require('gulp'),
     rimraf = require('rimraf'),
     browserSync = require("browser-sync"),
     htmlmin = require('gulp-htmlmin'),
+    jsImport = require('gulp-js-import'),
     reload = browserSync.reload;
    
 
@@ -27,7 +28,7 @@ var path = {
     },
     src: {
         html: 'src/index.html',
-        js: 'src/js/**/*.js',
+        js: 'src/js/main.js',
         style: 'src/style/style.scss',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*',
@@ -72,7 +73,8 @@ gulp.task('html:build', function () {
 
 gulp.task('js:build', function () {
     gulp.src(path.src.js) 
-        .pipe(rigger()) 
+     //   .pipe(rigger()) 
+        .pipe(jsImport({hideConsole: true}))
         .pipe(uglify()) 
         .pipe(gulp.dest(path.build.js))
         .pipe(reload({stream: true}));
