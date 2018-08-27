@@ -1,10 +1,9 @@
-
 $(window).on("load", function () {
     $('.main-wrapper').addClass('show');
 });
 
 $(document).ready(function () {
-    
+
     /* Custom select */
     $(".b-custom-select").each(function () {
         var classes = $(this).attr("class"),
@@ -27,7 +26,7 @@ $(document).ready(function () {
     }, function () {
         $(this).parents(".custom-options").removeClass("option-hover");
     });
-    $(".b-custom-select-trigger").on("click", function () {
+    $(".b-custom-select-trigger").on("click", function (event) {
         $('html').one('click', function () {
             $(".b-custom-select").removeClass("opened");
         });
@@ -41,21 +40,21 @@ $(document).ready(function () {
         $(this).parents(".b-custom-select").removeClass("opened");
         $(this).parents(".b-custom-select").find(".b-custom-select-trigger").text($(this).text());
     });
-    
-     $(".js-header-select").each(function () {
+
+    $(".js-header-select").each(function () {
         $(this).find(".item").each(function () {
             $(this).click(function () {
                 $(this).addClass("selected").siblings().removeClass("selected");
             });
         });
     });
-    
+
     $('.js-navbar-toggler').click(function () {
         $(this).toggleClass('open');
     });
-    
+
     $(".card-content-wrapp").mCustomScrollbar({
-            theme: "dark-3",
-            scrollInertia: 200
-        });
+        theme: "dark-3",
+        scrollInertia: 200
+    });
 });
