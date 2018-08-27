@@ -1,5 +1,5 @@
 .card-search {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 /*
@@ -28,11 +28,10 @@
     position: relative;
     display: block;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 0.9375rem;
     cursor: pointer;
     padding: .31rem 1.2rem .37rem;
-    font-size: 12px;
-    border-radius: 15px;
+    font-size: 0.75rem;
     border: solid 1px #e1e1e1;
     color: #9b9b9b;
     transition: all .2s ease-in-out;
@@ -56,8 +55,8 @@
     position: absolute;
     display: block;
     content: '';
-    width: 7px;
-    height: 7px;
+    width: 0.4375rem;
+    height: 0.4375rem;
     top: 50%;
     right: 15px;
     margin-top: -2px;
@@ -92,7 +91,7 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transform: translateY(-15px);
+    transform: translateY(-0.9375rem);
     z-index: -1;
 }
 
@@ -108,7 +107,7 @@
     position: absolute;
     content: '';
     bottom: 100%;
-    right: 25px;
+    right: 1.5625rem;
     transition: all .2s ease-in-out;
     
     width: 0;
@@ -125,10 +124,10 @@
 .custom-option {
     position: relative;
     display: block;
-    padding: 0 22px;
+    padding: 0 1.375rem;
     border-bottom: 1px solid #e1e1e1;
     color: #9b9b9b;
-    font-size: 13px;
+    font-size: 0.8125rem;
     font-weight: 600;
     line-height: 2.4;
     cursor: pointer;
@@ -136,12 +135,12 @@
 }
 
 .custom-option:first-of-type {
-    border-radius: 15px 15px 0 0;
+    border-radius: 0.9375rem 0.9375rem 0 0;
 }
 
 .custom-option:last-of-type {
     border-bottom: 0;
-    border-radius: 0 0 15px 15px;
+    border-radius: 0 0 0.9375rem 0.9375rem;
 }
 
 .custom-option:hover,
@@ -172,12 +171,12 @@
     }
     
     .btn-outline-secondary.custom-secondary {
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 1.5;
         padding: .31rem .75rem .37rem;
         color: #9b9b9b;
         border-color: #e1e1e1;
-        width: 100px;
+        width: 6.25rem;
         
         &:hover {
             color: #652d90;

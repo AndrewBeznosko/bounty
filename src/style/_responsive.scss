@@ -1,122 +1,171 @@
-/* header */
-@media screen and (max-width:768px) {
+@media screen and (max-width:1400px) {
     html {
         font-size: 14px;
     }
-    
-    .navbar-brand {
-        padding-top: .5125rem;
-        padding-bottom: .5125rem;
-    }
-    
-    .title,
-    .filters-title {
-        padding-left: 1rem;
-    }
-    
-    /* card-navbar */
-    .card-navbar {
-        .header-select {
-            display: none;
-        }
-        
-        .card-body {
-            padding: 0 1.5rem 0 1.5rem;
-        }
-    }
-    
-    .navbar-nav li {
-        width: 100%;
-        text-align: center;
-        &.btn-wrp {
-            margin-left: 0;
-            margin-bottom: 0.5rem;
-            &.first {
-                margin-top: 0.5rem;
-            }
-         
-        }
-    }
-    
+}
+
+@media screen and (max-width:991px) {
     /* row-main-card-and-filters */
     .row-main-card-and-filters {
         flex-direction: column-reverse;
     }
-    
+
+    /* header */
+    header {
+        .navbar-nav {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 1rem;
+
+            li {
+                order: 3;
+
+                &.btn-wrp {
+                    order: 1;
+                    width: auto;
+                    margin-left: .5rem;
+                    margin-right: .5rem;
+                }
+            }
+        }
+
+        .navbar-brand {
+            padding-top: .5125rem;
+            padding-bottom: .5125rem;
+        }
+
+        .navbar-nav li {
+            width: 100%;
+            text-align: center;
+            &.btn-wrp {
+                margin-left: 0;
+                margin-bottom: 0.5rem;
+                &.first {
+                    margin-top: 0.5rem;
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 13px;
+    }
+
+    /* titles */
+    .title,
+    .filters-title {
+        padding-left: 1rem;
+    }
+
+    /* card-navbar */
+    .card-navbar {
+        .header-select {
+            position: absolute;
+            top: 100%;
+            left: 0px;
+            width: 100%;
+            background: rgb(255, 255, 255);
+            margin-top: 5px;
+            box-shadow: rgba(175, 178, 179, 0.5) 0px 2px 20px 0px;
+            border-radius: 14px;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            z-index: 999;
+
+            .item:last-of-type {
+                margin-right: 0;
+            }
+        }
+
+        .card-body {
+            padding: 0 1.5rem 0 1.5rem;
+            align-items: center;
+            position: relative;
+        }
+
+        .navbar-toggler {
+            margin-right: 1.5rem;
+        }
+    }
+
     /* main-card */
     .main-card {
-        
+
         .logo {
             top: 9px;
             left: 22px;
             width: 55px;
             height: 55px;
         }
-        
+
         .title {
-            margin-left: 5rem;
+            margin-left: 6rem;
         }
-        
+
         .bottom-line {
             margin-left: 6rem;
             width: auto;
         }
-        
+
         .card-text {
             margin-top: 1rem;
-            
+
             & > .top {
                 display: flex;
                 justify-content: space-between;
                 flex-direction: column;
                 margin-left: 1rem;
             }
-            
+
             & > .bottom {
                 justify-content: space-between;
                 flex-direction: column;
                 align-items: flex-start;
                 margin-bottom: 1rem;
                 margin-left: 1rem;
-                
+
                 .btn-sm-custom {
                     order: 1;
                     margin-top: 1rem;
                 }
             }
-            
+
             .text-gray {
                 margin-bottom: .3rem;
                 max-width: 65%;
                 width: 100%;
                 margin-right: 0;
             }
-            
+
             .text-bold-black {
                 display: block;
                 margin-left: 0;
                 float: right;
             }
         }
-        
+
         section {
             padding-left: 1rem;
             padding-right: 1rem;
-            
+
             .btn.btn-outline-secondary {
-                min-width: 100px;
-                max-width: 100px;
+                min-width: 6.25rem;
+                max-width: 6.25rem;
                 margin-bottom: 1rem;
-                
+
                 &.active::after {
                     display: none;
                 }
             }
         }
-        
+
         .line {
             margin-top: 2px;
         }
     }
-    
+
 }

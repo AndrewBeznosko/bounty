@@ -28,15 +28,23 @@
         <div class="container main-container">
 
             <div class="row">
-                <div class="col-12 col-sm-9">
+                <div class="col-12 col-lg-9">
                     <h3 class="title">BOUNTY CAMPAIGNS</h3>
                     <div class="card card-navbar">
                         <div class="card-body d-flex">
-                            <div class="js-header-select header-select">
-                                <div class="item selected">Added</div>
-                                <div class="item">Start date</div>
-                                <div class="item">End date</div>
-                                <div class="item">My campaigns</div>
+                            <div class="card-navbar__nav navbar-expand-md">
+                                <button class="navbar-toggler js-navbar-toggler" id="nav-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse-2" aria-controls="navbarCollapse-2" aria-expanded="false" aria-label="Toggle navigation">           
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>      
+                                </button>
+                                <div class="js-header-select header-select collapse navbar-collapse" id="navbarCollapse-2">
+                                    <div class="item selected">Added</div>
+                                    <div class="item">Start date</div>
+                                    <div class="item">End date</div>
+                                    <div class="item">My campaigns</div>
+                                </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between" style="flex-grow:1;">
                                 <div>
@@ -50,7 +58,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-3">
+                <div class="col-12 col-lg-3">
                     <h3 class="title filters-title">FILTERS</h3>
                     <div class="card card-search">
                         <div class="card-body">
@@ -66,7 +74,7 @@
             </div>
 
             <div class="row row-main-card-and-filters">
-                <div class="col-12 col-sm-9">
+                <div class="col-12 col-lg-9">
                     <div class="card main-card mb-3">
                         <div class="card-body">
                             <section class="top">
@@ -89,7 +97,7 @@
                                     </div>
                                     <div class="col-12 bottom">
                                         <span class="text-gray mr-3">Bounty badger: <span class="text-bold-black">210,000,000 DST</span></span>
-                                        <a href="#" class="btn btn-primary btn-sm-custom mr-3">3,5$</a>
+                                        <label class="btn btn-primary btn-sm-custom mr-3 mb-0">3,5$</label>
                                         <span class="text-gray mr-3">Hard Cap: <span class="text-bold-black">12,000,000 $</span></span>
                                     </div>
                                 </div>
@@ -154,7 +162,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-3">
+                <div class="col-12 col-lg-3">
                     <div class="card filters-card">
                         <div class="card-body">
                             <select name="sources" id="sources" class="b-custom-select sources mb-4" placeholder="Categories">

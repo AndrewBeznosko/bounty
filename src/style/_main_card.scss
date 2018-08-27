@@ -13,20 +13,21 @@
         letter-spacing: .4px;
         color: #555555;
         margin: 0;
+        padding: 0;
     }
     
     .logo {
         position: absolute;
-        top: -8px;
-        left: 25px;
+        top: -0.5rem;
+        left: 1.5625rem;
         display: inline-block;
-        width: 75px;
-        height: 75px;
+        width: 4.6875rem;
+        height: 4.6875rem;
     }
     
     section {
-        padding-left: 120px;
-        padding-right: 30px;
+        padding-left: 7.5rem;
+        padding-right: 1.875rem;
         
         .top {
             position: relative;
@@ -41,10 +42,10 @@
         .btn.btn-outline-secondary {
             min-width: 15%;
             max-width: 15%;
-            font-size: 12px;
+            font-size: 0.75rem;
             font-family: Oxygen;
             letter-spacing: .05rem;
-            padding: 5px 15px;
+            padding: 0.3125rem 0.9375rem;
             color: #555;
             text-overflow: ellipsis;
             border-color: #e1e1e1;
@@ -65,7 +66,7 @@
             }
             
             i {
-                font-size: 14px;
+                font-size: 0.875rem;
                 color: #555;
             }
             
@@ -82,8 +83,8 @@
                     left: 50%;
                     top: 122%;
                     transform: translateX(-50%) rotate(45deg);
-                    width: 10px;
-                    height: 10px;
+                    width: 0.625rem;
+                    height: 0.625rem;
                     background: #fff;
                     border-top: solid 1.5px #ebebeb;
                     border-left: solid 1.5px #ebebeb;
@@ -97,7 +98,7 @@
     }
     
     .card-text {
-        font-size: 12px;
+        font-size: 0.75rem;
         font-family: Oxygen;
         
         & > .top {

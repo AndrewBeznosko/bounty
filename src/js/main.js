@@ -50,7 +50,7 @@ $(document).ready(function () {
         });
     });
     
-    $('#nav-toggler').click(function () {
+    $('.js-navbar-toggler').click(function () {
         $(this).toggleClass('open');
     });
     
