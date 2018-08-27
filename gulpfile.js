@@ -33,7 +33,7 @@ var path = {
         style: 'src/style/style.scss',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*',
-        bootstrap: 'src/bootstrap/*.*',
+        bootstrap: 'src/bootstrap/bootstrap.min.css',
         htaccess: '.htaccess'
     },
     watch: {

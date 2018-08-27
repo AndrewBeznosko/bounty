@@ -1,4 +1,5 @@
 @import 'src/js/jquery-3.1.1.min.js';
+@import 'src/js/popper.min.js';
 @import 'src/bootstrap/bootstrap.min.js';
 @import 'src/js/custom_scrollbar.min.js';
 
