@@ -40,7 +40,8 @@ $(document).ready(function () {
         $(this).parents(".b-custom-select").removeClass("opened");
         $(this).parents(".b-custom-select").find(".b-custom-select-trigger").text($(this).text());
     });
-
+    
+    /* header-select */
     $(".js-header-select").each(function () {
         $(this).find(".item").each(function () {
             $(this).click(function () {
@@ -48,13 +49,20 @@ $(document).ready(function () {
             });
         });
     });
-
+    
+    /* toggler */
     $('.js-navbar-toggler').click(function () {
         $(this).toggleClass('open');
     });
-
+    
+    /* custom scroll */
     $(".card-content-wrapp").mCustomScrollbar({
         theme: "dark-3",
         scrollInertia: 200
     });
+    
+    /* progressbar width */
+    var getWidth = $('.js-progressbar-line').data('width');
+    $('.js-progressbar-line').css("width", getWidth + '%')
+    
 });
