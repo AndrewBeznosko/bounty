@@ -24,7 +24,8 @@ var path = {
         css: 'build/css/',
         img: 'build/img/',
         fonts: 'build/fonts/',
-        bootstrap: 'build/bootstrap/'
+        bootstrap: 'build/bootstrap/',
+        htaccess: 'build/'
     },
     src: {
         html: 'src/index.html',
@@ -32,14 +33,16 @@ var path = {
         style: 'src/style/style.scss',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*',
-        bootstrap: 'src/bootstrap/*.*'
+        bootstrap: 'src/bootstrap/*.*',
+        htaccess: '.htaccess'
     },
     watch: {
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
         style: 'src/style/**/*.scss',
         img: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*'
+        fonts: 'src/fonts/**/*.*',
+        htaccess: '.htaccess'
     },
     clean: './build'
 };
@@ -110,6 +113,11 @@ gulp.task('fonts:build', function() {
         .pipe(gulp.dest(path.build.fonts))
 });
 
+gulp.task('htaccess:build', function() {
+    gulp.src(path.src.htaccess)
+        .pipe(gulp.dest(path.build.htaccess))
+});
+
 gulp.task('bootstrap:build', function() {
     gulp.src(path.src.bootstrap)
         .pipe(gulp.dest(path.build.bootstrap))
@@ -121,7 +129,8 @@ gulp.task('build', [
     'style:build',
     'fonts:build',
     'image:build',
-    'bootstrap:build'
+    'bootstrap:build',
+    'htaccess:build'
 ]);
 
 
